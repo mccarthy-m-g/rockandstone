@@ -1,5 +1,8 @@
 #' Play a random voiceline
 #'
+#' `rockandstone()` plays a random voiceline. This is useful, for example, to
+#' to get notified when a script is finished.
+#'
 #' @param category An optional character vector specifying the voiceline
 #'   categories to include for playback. See `voiceline_categories()` for
 #'   options.
@@ -30,6 +33,23 @@ rockandstone <- function(
   nsfw = FALSE
 ) {
 
+  voiceline <- select_voiceline(category, sentiment, nsfw)
+
+  play_voiceline(
+    system.file("audio", voiceline, package = "rockandstone")
+  )
+
+  # TODO: Send an optional desktop notification, email notification, text
+  # message, etc. For text/email, make the sender "Mission Control".
+
+}
+
+#' @rdname rockandstone
+select_voiceline <- function(
+  category = NULL,
+  sentiment = NULL,
+  nsfw = FALSE
+) {
   # Note: `voicelines_final` is internal data stored in `R/sysdata.rda`.
 
   # Profanity should be excluded by default to be user-friendly.
@@ -60,6 +80,8 @@ rockandstone <- function(
   # Some combinations of argument parameters will not return any voicelines, so
   # this needs to be checked explicitly.
   if(nrow(voicelines_final) == 0) {
+    # FIXME: Instead of throwing an error, consider making this a warning, and
+    # return the unaltered `voicelines_final` data instead.
     rlang::abort(
       "No voicelines are available for this combination of argument parameters."
     )
@@ -67,15 +89,9 @@ rockandstone <- function(
 
   # After optional filtering of the voiceline pool, a single random voiceline
   # should be returned for playback.
-  voicelines_final <- voicelines_final |>
+  voicelines_final |>
     dplyr::slice_sample(n = 1) |>
     dplyr::pull(file)
-
-  play_voiceline(
-    system.file("audio", voicelines_final, package = "rockandstone")
-  )
-
-  # TODO: Send an optional desktop notification, email notification, etc.
 
 }
 
