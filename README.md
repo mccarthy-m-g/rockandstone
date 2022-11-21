@@ -34,7 +34,7 @@ rockandstone(nsfw = TRUE)
 The voiceline pool can also be reduced to certain categories and/or sentiments to suit your use case.
 
 ```r
-rockandstone(rockandstone(category = "salute"))
+rockandstone(category = "salute")
 rockandstone(sentiment = "negative")
 ```
 
