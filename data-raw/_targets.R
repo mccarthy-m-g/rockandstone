@@ -32,7 +32,7 @@ for (file in list.files("R", full.names = TRUE)) source(file)
 # source("other_functions.R") # Source other scripts as needed. # nolint
 
 # Replace the target list below with your own:
-list(
+voicelines_targets <- list(
   tar_target(
     voicelines_wiki_url,
     # FIXME: wiki moved to https://deeprockgalactic.wiki.gg/wiki/Voicelines
@@ -68,4 +68,25 @@ list(
     write_internal_data(voicelines_final = voicelines_final),
     format = "file"
   )
+)
+
+creatures_targets <- list(
+  tar_target(
+    creatures_wiki_url,
+    "https://deeprockgalactic.wiki.gg/wiki/Special:CargoTables/CreatureStats"
+  ),
+  tar_target(
+    creatures,
+    get_creatures_data(creatures_wiki_url)
+  ),
+  tar_target(
+    creatures_data,
+    write_exported_data(creatures = creatures),
+    format = "file"
+  )
+)
+
+list(
+  voicelines_targets,
+  creatures_targets
 )
