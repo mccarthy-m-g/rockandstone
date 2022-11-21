@@ -1,12 +1,16 @@
 Package: rockandstone
-Title: What the Package Does (One Line, Title Case)
+Title: Play Voicelines from Deep Rock Galactic
 Version: 0.0.0.9000
 Authors@R: 
-    person("Michael", "McCarthy", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+  c(person(given = "Michael",
+           family = "McCarthy",
+           role = c("aut", "cre"),
+           email = "m.mccarthy1624@gmail.com"),
+    person(given = "Ghost Ship Games",
+           role = "cph",
+           comment = "Author of included audio files"))
+Description: Play Voicelines from the video game Deep Rock Galactic.
+License: MIT + file LICENSE
 URL: https://mccarthy-m-g.github.io/rockandstone/
 Encoding: UTF-8
 LazyData: true
@@ -16,16 +20,16 @@ Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
 Imports:
+    av,
     beepr,
     dplyr,
     rlang,
-    withr,
+    withr
 Suggests:
     rvest,
     targets,
     xml2,
     purrr,
-    dplyr,
     tidyr,
     stringr,
     testthat (>= 3.0.0),

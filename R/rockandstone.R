@@ -12,6 +12,10 @@
 #' @param nsfw A logical specifying whether to include "Not Safe For Work"
 #'   voicelines that include profanity. Default is `FALSE`.
 #'
+#' @note [Voicelines](https://deeprockgalactic.wiki.gg/wiki/Voicelines) by
+#'   [Ghost Ship Games](https://ghostship.dk) are licensed under
+#'   [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+#'
 #' @return `NULL`
 #' @export
 #'

@@ -25,6 +25,11 @@ voicelines that include profanity. Default is \code{FALSE}.}
 \code{rockandstone()} plays a random voiceline. This is useful, for example, to
 to get notified when a script is finished.
 }
+\note{
+\href{https://deeprockgalactic.wiki.gg/wiki/Voicelines}{Voicelines} by
+\href{https://ghostship.dk}{Ghost Ship Games} are licensed under
+\href{https://creativecommons.org/licenses/by-nc-sa/3.0/}{CC BY-NC-SA 3.0}
+}
 \examples{
 
 # By default the voiceline pool includes all "Safe For Work" voicelines

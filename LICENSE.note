@@ -1,0 +1,5 @@
+The rockandstone package as a whole is distributed under MIT. The rockandstone package includes other licensed materials. The following is a list of these materials:
+
+* inst/audio: CC BY-NC-SA 3.0
+
+Full copies of the license agreements used by these components are included in `inst/audio`.
