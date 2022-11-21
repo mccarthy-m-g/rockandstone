@@ -44,7 +44,11 @@ rockandstone <- function(
 
 }
 
-#' @rdname rockandstone
+#' Select a random voiceline
+#'
+#' Same arguments as `rockandstone()`.
+#'
+#' @keywords internal
 select_voiceline <- function(
   category = NULL,
   sentiment = NULL,
@@ -100,6 +104,7 @@ select_voiceline <- function(
 #' @param file_ogg The .ogg file path
 #'
 #' @return `NULL`
+#' @keywords internal
 play_voiceline <- function(file_ogg) {
 
   # Storing .wav versions of the voicelines takes over 120 MB of space, which
@@ -125,8 +130,13 @@ play_voiceline <- function(file_ogg) {
 
 #' Get voiceline categories
 #'
-#' @return A character vector
+#' @return A character vector.
 #' @export
+#'
+#' @examples
+#'
+#' # Get voiceline categories
+#' voiceline_categories()
 voiceline_categories <- function() {
   unique(voicelines_final$category)
 }

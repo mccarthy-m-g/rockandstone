@@ -30,4 +30,4 @@ creatures
 \description{
 A subset of data from the Deep Rock Galactic creature stats table.
 }
-\keyword{datasets}
+\keyword{data}

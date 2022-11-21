@@ -1,0 +1,17 @@
+url: https://mccarthy-m-g.github.io/rockandstone/
+template:
+  bootstrap: 5
+  bslib:
+    bg: "#000000"
+    fg: "#ffffff"
+    primary: "#dd9c00"
+  theme: a11y-dark
+
+reference:
+- title: Play Voicelines
+  contents:
+  - rockandstone
+  - voiceline_categories
+- title: Data
+  contents:
+  - has_keyword("data")

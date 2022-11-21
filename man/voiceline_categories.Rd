@@ -7,8 +7,13 @@
 voiceline_categories()
 }
 \value{
-A character vector
+A character vector.
 }
 \description{
 Get voiceline categories
+}
+\examples{
+
+# Get voiceline categories
+voiceline_categories()
 }

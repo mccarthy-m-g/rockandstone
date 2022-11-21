@@ -2,12 +2,9 @@
 % Please edit documentation in R/rockandstone.R
 \name{rockandstone}
 \alias{rockandstone}
-\alias{select_voiceline}
 \title{Play a random voiceline}
 \usage{
 rockandstone(category = NULL, sentiment = NULL, nsfw = FALSE)
-
-select_voiceline(category = NULL, sentiment = NULL, nsfw = FALSE)
 }
 \arguments{
 \item{category}{An optional character vector specifying the voiceline

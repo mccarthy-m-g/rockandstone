@@ -15,3 +15,4 @@ play_voiceline(file_ogg)
 \description{
 Play voicelines
 }
+\keyword{internal}

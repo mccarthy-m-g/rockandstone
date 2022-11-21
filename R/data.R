@@ -16,4 +16,5 @@
 #'   \item{freeze_temp}{temperature the creature freezes at}
 #' }
 #' @source <https://deeprockgalactic.wiki.gg/wiki/Special:CargoTables/CreatureStats>
+#' @keywords data
 "creatures"
