@@ -39,7 +39,6 @@ list(
     # after August 2022, so if new voicelines are to be added they need to come
     # from there, and some of the rvest code in get_voicelines_table() may need
     # to be changed.
-    # TODO: Add other voicelines, e.g., https://deeprockgalactic.fandom.com/wiki/Mission_Control/Quotes?so=search
     "https://deeprockgalactic.fandom.com/wiki/Voicelines?mobileaction=toggle_view_mobile"
   ),
   tar_target(
