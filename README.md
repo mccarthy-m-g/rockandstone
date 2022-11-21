@@ -46,7 +46,7 @@ options(error = function() rockandstone(sentiment = "negative"))
 
 ## Requirements
 
-`rockandstone` currently uses the [`beepr` package](https://github.com/rasmusab/beepr) to play sounds in R.
+`rockandstone` currently uses the [`beepr`](https://github.com/rasmusab/beepr) package to play sounds in R.
 
 ### macOS and Windows
 
