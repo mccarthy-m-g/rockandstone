@@ -1,5 +1,9 @@
 # rockandstone <a href='https://mccarthy-m-g.github.io/rockandstone/'><img src='man/figures/logo.png' align="right" height="139"/></a>
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/mccarthy-m-g/rockandstone/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mccarthy-m-g/rockandstone/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 > Gimme an R! Gimme an S! Gimme a Rock and Stone.
 
 `rockandstone` is a package for playing voicelines from the video game [Deep Rock Galactic](https://www.deeprockgalactic.com) in R.
