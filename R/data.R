@@ -3,7 +3,7 @@
 #' A subset of data from the Deep Rock Galactic creature stats table.
 #'
 #' @format ## `creatures`
-#' A data frame with 7,240 rows and 60 columns:
+#' A data frame with 99 rows and 9 columns:
 #' \describe{
 #'   \item{name}{creature name}
 #'   \item{species}{creature species}
