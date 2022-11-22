@@ -84,25 +84,19 @@ voicelines that include profanity. Default is <code>FALSE</code>.</p></dd>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co"># interactive()</span></span></span>
+<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># By default the voiceline pool includes all "Safe For Work" voicelines</span></span></span>
 <span class="r-in"><span><span class="fu">rockandstone</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>beep() could not play the sound due to the following error:</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> Error in play.default(x, rate, ...): no audio drivers are available</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># "Not Safe For Work Voicelines" (with profanity) are opt-in</span></span></span>
 <span class="r-in"><span><span class="fu">rockandstone</span><span class="op">(</span>nsfw <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>beep() could not play the sound due to the following error:</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> Error in play.default(x, rate, ...): no audio drivers are available</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># The voiceline pool can be reduced to certain categories and/or sentiments</span></span></span>
 <span class="r-in"><span><span class="co"># to suit your use case</span></span></span>
 <span class="r-in"><span><span class="fu">rockandstone</span><span class="op">(</span>category <span class="op">=</span> <span class="st">"salute"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>beep() could not play the sound due to the following error:</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> Error in play.default(x, rate, ...): no audio drivers are available</span>
 <span class="r-in"><span><span class="fu">rockandstone</span><span class="op">(</span>sentiment <span class="op">=</span> <span class="st">"negative"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>beep() could not play the sound due to the following error:</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> Error in play.default(x, rate, ...): no audio drivers are available</span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
