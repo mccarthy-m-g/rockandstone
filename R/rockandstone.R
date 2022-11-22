@@ -19,7 +19,7 @@
 #' @return `NULL`
 #' @export
 #'
-#' @examples
+#' @examplesIf interactive()
 #'
 #' # By default the voiceline pool includes all "Safe For Work" voicelines
 #' rockandstone()

@@ -31,6 +31,7 @@ to get notified when a script is finished.
 \href{https://creativecommons.org/licenses/by-nc-sa/3.0/}{CC BY-NC-SA 3.0}
 }
 \examples{
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 
 # By default the voiceline pool includes all "Safe For Work" voicelines
 rockandstone()
@@ -42,4 +43,5 @@ rockandstone(nsfw = TRUE)
 # to suit your use case
 rockandstone(category = "salute")
 rockandstone(sentiment = "negative")
+\dontshow{\}) # examplesIf}
 }
